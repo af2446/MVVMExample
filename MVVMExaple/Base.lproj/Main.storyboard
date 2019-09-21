@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MVVMExaple" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PuC-R8-ObD">
+                                <rect key="frame" x="270" y="68" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="mOj-Gi-O9k"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="change text switch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erA-Wx-thT">
+                                <rect key="frame" x="24" y="73" width="222" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZx-J8-ZJp">
+                                <rect key="frame" x="24" y="173" width="327" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUm-gS-qxk">
+                                <rect key="frame" x="24" y="264" width="327" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRd-yj-cil">
+                                <rect key="frame" x="143" y="352" width="89" height="30"/>
+                                <state key="normal" title="Start Interval"/>
+                                <connections>
+                                    <action selector="startIntervalAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X9j-N0-RMy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PuC-R8-ObD" firstAttribute="leading" secondItem="erA-Wx-thT" secondAttribute="trailing" constant="24" id="62E-ix-Yw5"/>
+                            <constraint firstItem="WUm-gS-qxk" firstAttribute="top" secondItem="qZx-J8-ZJp" secondAttribute="bottom" constant="70.5" id="9ud-QM-yja"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WUm-gS-qxk" secondAttribute="trailing" constant="24" id="B5m-RT-43T"/>
+                            <constraint firstItem="PuC-R8-ObD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="GvC-Ca-gnM"/>
+                            <constraint firstItem="erA-Wx-thT" firstAttribute="centerY" secondItem="PuC-R8-ObD" secondAttribute="centerY" id="Im5-IS-yM6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PuC-R8-ObD" secondAttribute="trailing" constant="56" id="Jrf-CD-K62"/>
+                            <constraint firstItem="cRd-yj-cil" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ncx-CE-yaw"/>
+                            <constraint firstItem="qZx-J8-ZJp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="QGe-D7-4pw"/>
+                            <constraint firstItem="qZx-J8-ZJp" firstAttribute="top" secondItem="PuC-R8-ObD" secondAttribute="bottom" constant="74" id="TKf-HV-MUo"/>
+                            <constraint firstItem="erA-Wx-thT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="ZNa-Y9-UDJ"/>
+                            <constraint firstItem="WUm-gS-qxk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="chT-lH-OPc"/>
+                            <constraint firstItem="cRd-yj-cil" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="htV-8r-lyJ"/>
+                            <constraint firstItem="cRd-yj-cil" firstAttribute="top" secondItem="WUm-gS-qxk" secondAttribute="bottom" constant="67.5" id="mXz-1t-ILf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cRd-yj-cil" secondAttribute="trailing" constant="40" id="n7f-Tk-MCR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qZx-J8-ZJp" secondAttribute="trailing" constant="24" id="sdf-d0-Lyy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblRandomGenerator" destination="WUm-gS-qxk" id="JGL-Yf-feE"/>
+                        <outlet property="lblSwitchText" destination="qZx-J8-ZJp" id="X3X-EI-tJn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
